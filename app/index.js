@@ -7,9 +7,11 @@ var arrayEach = require('./_arrayEach'),
 	arrayFilter = require('./_arrayFilter')
 	arrayMap = require('./_arrayMap'),
 	arrayPush = require('./_arrayPush'),
-	arrayReduce = require('./_arrayReduce');
+	arrayReduce = require('./_arrayReduce'),
+	arraySample = require('./_arraySample'),
+	baseRandom = require('./_baseRandom');
 // var a = arrayReduce([1, 2, 3],function(previousValue,v, k){
 // 	return v + previousValue;
 // }, 1)
 // console.log('a', a);
-
+console.log(arraySample([2,1,5,9]));
