@@ -11,9 +11,10 @@ var arrayEach = require('./_arrayEach'),
 	arrayReduce = require('./_arrayReduce'),
 	arraySample = require('./_arraySample'),
 	arraySome = require('./_arraySome'),
-	baseRandom = require('./_baseRandom');
-// var a = arrayReduce([1, 2, 3],function(previousValue,v, k){
-// 	return v + previousValue;
-// }, 1)
-// console.log('a', a);
+	copyArray = require('./_copyArray'),
+	baseRandom = require('./_baseRandom')
+	isArray = require('./isArray');
+
+var a = copyArray([1, 2, 3]);
+console.log('a', a);
 console.log(arraySample([2,1,5,9]));
