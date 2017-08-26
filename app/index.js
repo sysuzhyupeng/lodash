@@ -5,9 +5,11 @@ var arrayEach = require('./_arrayEach'),
 	arrayEachRight = require('./_arrayEachRight'),
 	arrayEvery = require('./_arrayEvery')
 	arrayFilter = require('./_arrayFilter')
-	arrayMap = require('./_arrayMap');
-// var a = arrayMap([1, 2, 3], function(v, k){
-// 	return v + 5;
-// })
+	arrayMap = require('./_arrayMap'),
+	arrayPush = require('./_arrayPush'),
+	arrayReduce = require('./_arrayReduce');
+// var a = arrayReduce([1, 2, 3],function(previousValue,v, k){
+// 	return v + previousValue;
+// }, 1)
 // console.log('a', a);
 
