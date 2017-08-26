@@ -1,0 +1,25 @@
+{
+  "name": "lodash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server  --open --hot --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sysuzhyupeng/lodash.git"
+  },
+  "author": "sysuzhyupeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sysuzhyupeng/lodash/issues"
+  },
+  "homepage": "https://github.com/sysuzhyupeng/lodash#readme",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
