@@ -12,9 +12,12 @@ var arrayEach = require('./_arrayEach'),
 	arraySample = require('./_arraySample'),
 	arraySome = require('./_arraySome'),
 	copyArray = require('./_copyArray'),
-	baseRandom = require('./_baseRandom')
+	baseRandom = require('./_baseRandom'),
+	baseFindIndex = require('./_baseFindIndex'),
+	eq = require('./eq'),
 	isArray = require('./isArray');
 
-var a = copyArray([1, 2, 3]);
+var a = baseFindIndex([1, 2, 3], function(v, k){
+	return v == 3;
+}, 0);
 console.log('a', a);
-console.log(arraySample([2,1,5,9]));
