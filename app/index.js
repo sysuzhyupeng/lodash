@@ -15,7 +15,7 @@ var arrayEach = require('./_arrayEach'),
 	arrayIncludesWith = require('./_arrayIncludesWith'),
 	asciiSize = require('./_asciiSize'),
 	asciiToArray = require('./_asciiToArray'),
-	asciiWords = require('./asciiWords'),
+	asciiWords = require('./_asciiWords'),
 	copyArray = require('./_copyArray'),
 	baseRandom = require('./_baseRandom'),
 	baseFindIndex = require('./_baseFindIndex'),
@@ -31,11 +31,13 @@ var arrayEach = require('./_arrayEach'),
 	eq = require('./eq'),
 	isArray = require('./isArray'),
 	isObject = require('./isObject'),
-	isNull = require('./isNull');
+	isNull = require('./isNull'),
+	isObjectLike = require('./isObjectLike'),
+	reverse = require('./reverse');
 
 
 // var a = arrayIncludesWith([1, 2, 3], 3, function(val1, val2){
 // 	return val1 + val2 == 3;
 // });
 // console.log('a', a);
-console.log(asciiSize('fdsa;fjds'))
+console.log(baseClamp(49, 51, 100))

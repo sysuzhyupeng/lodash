@@ -1,5 +1,7 @@
 /*
-	Clamp返回一个[lower, upper]中更接近哪一个
+	对于[lower, upper],
+	如果number在区间内，则返回number,
+	否则返回更接近于lower或者upper
 */
 function baseClamp(number, lower, upper) {
 	/*
