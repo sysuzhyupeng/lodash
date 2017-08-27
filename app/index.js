@@ -11,15 +11,20 @@ var arrayEach = require('./_arrayEach'),
 	arrayReduce = require('./_arrayReduce'),
 	arraySample = require('./_arraySample'),
 	arraySome = require('./_arraySome'),
+	arrayIncludes = require('./_arrayIncludes'),
+	arrayIncludesWith = require('./_arrayIncludesWith'),
 	copyArray = require('./_copyArray'),
 	baseRandom = require('./_baseRandom'),
 	baseFindIndex = require('./_baseFindIndex'),
 	baseIsNaN = require('./_baseIsNaN'),
 	strictIndexOf = require('./_strictIndexOf'),
 	baseIndexOf = require('./_baseIndexOf'),
+	baseProperty = require('./_baseProperty'),
 	eq = require('./eq'),
 	isArray = require('./isArray');
 
 
-var a = baseIndexOf([1, 2, 3], 3, 0);
+var a = arrayIncludesWith([1, 2, 3], 3, function(val1, val2){
+	return val1 + val2 == 3;
+});
 console.log('a', a);
