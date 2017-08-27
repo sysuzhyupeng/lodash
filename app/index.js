@@ -14,10 +14,12 @@ var arrayEach = require('./_arrayEach'),
 	copyArray = require('./_copyArray'),
 	baseRandom = require('./_baseRandom'),
 	baseFindIndex = require('./_baseFindIndex'),
+	baseIsNaN = require('./_baseIsNaN'),
+	strictIndexOf = require('./_strictIndexOf'),
+	baseIndexOf = require('./_baseIndexOf'),
 	eq = require('./eq'),
 	isArray = require('./isArray');
 
-var a = baseFindIndex([1, 2, 3], function(v, k){
-	return v == 3;
-}, 0);
+
+var a = baseIndexOf([1, 2, 3], 3, 0);
 console.log('a', a);
