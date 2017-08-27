@@ -13,6 +13,8 @@ var arrayEach = require('./_arrayEach'),
 	arraySome = require('./_arraySome'),
 	arrayIncludes = require('./_arrayIncludes'),
 	arrayIncludesWith = require('./_arrayIncludesWith'),
+	asciiSize = require('./_asciiSize'),
+	asciiToArray = require('./_asciiToArray'),
 	copyArray = require('./_copyArray'),
 	baseRandom = require('./_baseRandom'),
 	baseFindIndex = require('./_baseFindIndex'),
@@ -24,7 +26,8 @@ var arrayEach = require('./_arrayEach'),
 	isArray = require('./isArray');
 
 
-var a = arrayIncludesWith([1, 2, 3], 3, function(val1, val2){
-	return val1 + val2 == 3;
-});
-console.log('a', a);
+// var a = arrayIncludesWith([1, 2, 3], 3, function(val1, val2){
+// 	return val1 + val2 == 3;
+// });
+// console.log('a', a);
+console.log(asciiSize('fdsa;fjds'))
