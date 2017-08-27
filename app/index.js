@@ -25,7 +25,9 @@ var arrayEach = require('./_arrayEach'),
 	baseProperty = require('./_baseProperty'),
 	getValue = require('./_getValue'),
 	eq = require('./eq'),
-	isArray = require('./isArray');
+	isArray = require('./isArray'),
+	isObject = require('./isObject'),
+	isNull = require('./isNull');
 
 
 // var a = arrayIncludesWith([1, 2, 3], 3, function(val1, val2){
