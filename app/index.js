@@ -24,9 +24,12 @@ var arrayEach = require('./_arrayEach'),
 	baseHas = require('./_baseHas'),
 	baseClamp = require('./_baseClamp'),
 	baseConformsTo = require('./_baseConformsTo'),
+	baseFor = require('./_baseFor'),
+	createBaseFor = require('./_createBaseFor'),
 	strictIndexOf = require('./_strictIndexOf'),
 	baseIndexOf = require('./_baseIndexOf'),
 	baseProperty = require('./_baseProperty'),
+	freeGlobal = require('./_freeGlobal'),
 	getValue = require('./_getValue'),
 	eq = require('./eq'),
 	isArray = require('./isArray'),
@@ -40,4 +43,3 @@ var arrayEach = require('./_arrayEach'),
 // 	return val1 + val2 == 3;
 // });
 // console.log('a', a);
-console.log(baseClamp(49, 51, 100))
