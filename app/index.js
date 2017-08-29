@@ -29,8 +29,10 @@ var arrayEach = require('./_arrayEach'),
 	strictIndexOf = require('./_strictIndexOf'),
 	baseIndexOf = require('./_baseIndexOf'),
 	baseProperty = require('./_baseProperty'),
+	coreJsData = require('./_coreJsData'),
 	freeGlobal = require('./_freeGlobal'),
 	getValue = require('./_getValue'),
+	root = require('./_root'),
 	eq = require('./eq'),
 	isArray = require('./isArray'),
 	isObject = require('./isObject'),
@@ -43,3 +45,7 @@ var arrayEach = require('./_arrayEach'),
 // 	return val1 + val2 == 3;
 // });
 // console.log('a', a);
+var isFunction = require('./isFunction'),
+    isMasked = require('./_isMasked'),
+    isObject = require('./isObject'),
+    toSource = require('./_toSource');
