@@ -45,7 +45,3 @@ var arrayEach = require('./_arrayEach'),
 // 	return val1 + val2 == 3;
 // });
 // console.log('a', a);
-var isFunction = require('./isFunction'),
-    isMasked = require('./_isMasked'),
-    isObject = require('./isObject'),
-    toSource = require('./_toSource');
